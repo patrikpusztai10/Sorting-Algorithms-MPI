@@ -1,0 +1,15 @@
+def selectionSort(list):
+   j=len(list)-1
+   while j>0:
+       k=j
+       max=j
+       s=list[j]
+       while k>0:
+           k-=1
+           if list[k]>s:
+               max=k
+               s=list[k]
+       list[max]=list[j]
+       list[j]=s
+       j-=1
+   return list
