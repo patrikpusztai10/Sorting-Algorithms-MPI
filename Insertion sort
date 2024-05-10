@@ -1,0 +1,9 @@
+def insertionSort(list):
+   for i in range(len(list)):
+       search_index = i
+       insert_value = list[search_index]
+       while search_index > 0 and list[search_index - 1] > insert_value:
+           list[search_index] = list[search_index - 1]
+           search_index -= 1
+       list[search_index] = insert_value
+   return list
